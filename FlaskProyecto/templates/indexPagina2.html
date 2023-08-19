@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'content/style.css')}}">
+
+    <title>Proyecto VIAT</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                    <a href="#hero">
+                        <img src="{{ url_for('static', filename='img/logoTransVencedoresVersion01.png') }}" alt="">
+                    </a>
+                </div>
+                <div class="nav-list">
+                    <div class="hamburger">
+
+                    </div>
+                    <ul>
+                        <li><a href="#hero" data-after="Home">Inicio</a></li>
+                        <li><a href="#services" data-after="Service">Proyecto</a></li>
+
+                        <li><a href="#about" data-after="About">Acerca de</a></li>
+                        <li><a href="#contact" data-after="Contact">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Header -->
+    <!-- Hero Section  -->
+    <section id="hero">
+        <div class="hero container">
+            <h2 id="primerParrafo">
+                Sistema de detección y alerta del estado de somnolencia para conductores
+                de la cooperativa
+                Trans-Vencedores para evitar posibles accidentes y muertes en las vías mediante
+                aplicación de técnicas de visión artificial.
+            </h2>
+
+
+
+            <!-- <div>
+              <h1>TRANS VENCEDORES <span></span></h1>
+              <h1>Transportamos vidas <span></span></h1>
+              <h1>acercamos fronteras <span></span></h1>
+              <--  <a href="#projects" type="button" class="cta">Portfolio</a>
+
+            </div>-->
+        </div>
+    </section>
+    <!-- End Hero Section  -->
+    <!-- Service Section -->
+    <section id="services">
+        <div class="services container">
+            <div class="service-top">
+                <h1 class="section-title">Pro<span>ye</span>cto</h1>
+
+                <CENTER> <img src="{{ url_for('videoCamara') }}" width="640" height="480"></CENTER>
+                <!--    <p>Sistema de detección y alerta del estado de somnolencia para conductores de la cooperativa
+                Trans-Vencedores para evitar posibles accidentes y muertes en las vías mediante
+                aplicación de técnicas de visión artificial a través del registro de los datos
+                en una base de datos </p>-->
+            </div>
+
+    </section>
+    <!-- End Service Section -->
+    <!-- About Section -->
+    <section id="about">
+        <div class="about container">
+            <div class="col-left">
+                <div class="about-img">
+                    <!-- <img src="./img/acerca del proyecto.png" alt="img">-->
+
+                    <img src="{{ url_for('static', filename='img/acerca del proyecto.png') }}" alt="">
+                </div>
+            </div>
+
+            <div class="col-right">
+                <h1 class="section-title">Acerca de<span>Nosotros</span></h1>
+                <h2>Informacion</h2>
+                <p>
+                    El sistema procesa los datos que se necesitan para determinar la somnolencia de
+                    los conductores en tiempo real, para ello se debe evaluar la detección de los ojos,
+                    cuál es su estado, y cuantos parpadeos realiza, además se debe determinar si el conductor
+                    presenta fatigas, por otro lado, se deberá comprobar que el modelo de IA calcule los
+                    niveles de somnolencia que pueda estar presentando por la cantidad de pestañeos.
+                </p>
+                <a href="#" class="cta">Descargar Documento</a>
+            </div>
+        </div>
+    </section>
+    <!-- End About Section -->
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact container">
+            <div>
+                <h1 class="section-title">Contactos <span>Información</span></h1>
+            </div>
+            <div class="contact-items">
+                <div class="contact-item">
+                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+                    <div class="contact-info">
+                        <h1>Phone</h1>
+
+                        <h2>Erick Olalla:</h2>
+                        <h2> +593 99 817 6916</h2>
+                        <h2>David Malquin: </h2>
+                        <h2> +593 97 955 3830</h2>
+                        <h2>Erick Caza:</h2>
+                        <h2> +593 99 596 9085 </h2>
+                        <h2>KarinaSimbaña:</h2>
+                        <h2>+593 99 995 0716 </h2>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+                    <div class="contact-info">
+                        <h1>Email</h1>
+                        <h2>efolalla@uce.edu.ec</h2>
+                        <h2>dsmalquina@uce.edu.ec</h2>
+                        <h2>efcazan@uce.edu.ec</h2>
+                        <h2>kjsimbana@uce.edu.ec</h2>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+                    <div class="contact-info">
+                        <h1>Dirección</h1>
+                        <h2>Quitumbe, Quito 170144</h2>
+                    </div>
+                </div>
+          
+    </section>
+    <!-- End Contact Section -->
+    <!-- Footer -->
+    <section id="footer">
+        <div class="footer container">
+            <div class="brand">
+                <h1><span>Tran</span>s <span>Venced</span>dores</h1>
+            </div>
+            <h2>Su solución web completa</h2>
+            <div class="social-icon">
+                <div class="social-item">
+                    <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+                </div>
+                <div class="social-item">
+                    <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+                </div>
+
+                <div class="social-item">
+                    <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
+                </div>
+            </div>
+            <p>VIAT © 2023 . Todos los derechos reservados</p>
+        </div>
+    </section>
+    <!-- End Footer -->
+    <script src="./app.js"></script>
+    <script src="{{ url_for('static', filename='content/app.js') }}"></script>
+
+</body>
+
+</html>

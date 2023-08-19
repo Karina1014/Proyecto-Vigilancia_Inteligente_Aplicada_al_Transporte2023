@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<h:head>
+    <title>Inicio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'content/stilo1.css')}}" />
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='content/img/logoTransVencedoresVersion01.png') }}" type="image/x-icon" />
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename = 'content/img/TransVencedores-bus.jpg')}}" />
+</h:head>
+<body>
+
+    <!-- Header -->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                </div>
+                <div class="nav-list">
+                    <div class="hamburger">
+                        <div class="bar"></div>
+                        <div class="about-img">
+
+                        </div>
+                    </div>
+                    <ul>
+                        <img src="{{ url_for('static', filename='img/logoTransVencedores.png') }}" alt="" />
+
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Header -->
+    <!-- Hero Section  -->
+    <section id="hero">
+        <div class="hero container">
+            <div>
+                <h1>TRANS VENCEDORES <span></span></h1>
+                <h1>Transportamos vidas <span></span></h1>
+                <h1>acercamos fronteras  <span></span></h1>
+                <br />
+                <h:form>
+
+
+                    <a href="{{ url_for('redirigir1') }}" class="mi-boton">Entrar</a>
+
+                </h:form>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Section  -->
+
+
+    <script src="{{ url_for('static', filename='content/app.js') }}"></script>
+
+    <script src="./app.js"></script>
+
+</body>
+</html>

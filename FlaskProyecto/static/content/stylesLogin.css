@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html {
+   
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    background-image: url(../img/fondo.jpg);
+}
+
+.mi-boton {
+    background-color: #4CAF50; /* Color de fondo */
+    border: none; /* Sin borde */
+    color: white; /* Color de texto */
+    padding: 10px 20px; /* Espacio interno */
+    text-align: center; /* Alineación de texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar como bloque en línea */
+    font-size: 16px; /* Tamaño de fuente */
+    border-radius: 4px; /* Borde redondeado */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+}
+
+    .mi-boton:hover {
+        background-color: #45a049; /* Color de fondo al pasar el mouse */
+    }
+form {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    text-align: center;
+    padding: 60px 80px;
+    box-shadow: 0 5px 10px rgb(35, 161, 41);
+    border-radius: 10px;
+    
+}
+
+form .title {
+    color: #f7f2f2;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif;
+}
+
+form label {
+    margin-bottom: 35px;
+    font-family: 'Arial', sans-serif;
+}
+
+form label .fa-solid {
+    font-size: 20px;
+    color: #efe8e8;
+    margin-right: 10px;
+}
+
+form label input {
+    outline: none;
+    border: none;
+    color: #252525;
+    border-bottom: solid 1px greenyellow;
+    padding: 0 5px;
+    font-size: 20px;
+}
+
+form label input::placeholder {
+    color: rgba(37, 37, 37, 0.5);
+}
+
+
+form .link {
+    color: #252525;
+    margin-bottom: 15px;
+}
+
+form button {
+    background-color: #4CAF50; /* Color de fondo */
+    border: none; /* Sin borde */
+    color: white; /* Color de texto */
+    padding: 10px 20px; /* Espacio interno */
+    text-align: center; /* Alineaci�n de texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar como bloque en l�nea */
+    font-size: 16px; /* Tama�o de fuente */
+    border-radius: 4px; /* Borde redondeado */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+}
